@@ -128,3 +128,34 @@ div[name="content-social"] {
 .contact-actions button:hover {
     background-color: #4f6a8f; /* สีเข้มกว่าเมื่อชี้ */
 }
+
+/* Social Media */
+@media (max-width: 600px) {
+    div[name="content-social"] {
+        grid-template-columns: 1fr; /* แสดง 1 คอลัมน์ */
+        gap: 20px;
+        padding: 0 10px;
+    }
+
+    .facebook, .Github, .Email {
+        grid-template-columns: 40px 1fr;
+        padding: 10px 12px;
+    }
+
+    .icon-facebook, .icon-github, .icon-email {
+        width: 40px;
+    }
+
+    .contact-actions {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        margin-top: 8px;
+    }
+
+    .contact-actions button, .contact-link {
+        min-width: 100%;
+        font-size: 0.85em;
+        padding: 6px 8px;
+    }
+}

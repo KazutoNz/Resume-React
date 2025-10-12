@@ -94,3 +94,24 @@ div[name="content-aboutme"] p {
 .hover-underline-animation.center:hover::after {
     transform-origin: bottom center; /* จุดเริ่มต้นเมื่อโฮเวอร์ */
 }
+
+/* About Me */
+@media (max-width: 600px) {
+    div[name="content-aboutme"] {
+        padding: 20px 15px;
+        max-width: 100%;
+    }
+
+    .circular-image {
+        max-width: 180px;
+        max-height: 50vh;
+    }
+
+    div[name="content-aboutme"] h1 {
+        font-size: 1.8em;
+    }
+
+    div[name="content-aboutme"] p {
+        font-size: 1.2em;
+    }
+}

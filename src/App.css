@@ -25,3 +25,48 @@ body {
     line-height: 1.6; /* ระยะห่างระหว่างบรรทัด */
     padding: 20px; /* ระยะห่างขอบ */
 }
+
+/*--------------------------------------------------------------
+                          MOBILE STYLING
+--------------------------------------------------------------*/
+
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* ลด padding สำหรับมือถือ */
+    }
+
+    h1 {
+        font-size: 1.8em; /* ลดขนาดหัวข้อใหญ่ */
+        text-align: center;
+    }
+
+    h2, h3 {
+        font-size: 1.4em; /* ลดขนาดหัวข้อรอง */
+    }
+
+    p, a {
+        font-size: 1em; /* ปรับตัวอักษรให้พอดี */
+    }
+
+    nav ul {
+        flex-direction: column; /* เมนูเรียงแนวตั้ง */
+        padding: 0;
+    }
+
+    nav ul li {
+        padding: 10px 0; /* ลด padding เมนู */
+        text-align: center;
+    }
+
+    /* ลดขนาดรูปภาพหรือ component ใหญ่ ๆ */
+    img {
+        max-width: 100%; /* ขนาดรูปพอดีกับหน้าจอ */
+        height: auto;
+    }
+
+    /* สำหรับปุ่ม */
+    button {
+        width: 100%; /* ให้เต็มความกว้าง */
+        padding: 10px;
+    }
+}

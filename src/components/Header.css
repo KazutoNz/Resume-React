@@ -69,3 +69,27 @@ a:hover:after {
         margin-top: 40px; /* เปลี่ยนระยะห่างเมื่อหน้าจอเล็ก */
     }
 }
+
+/*==============================================================
+                          MOBILE RESPONSIVE
+==============================================================*/
+
+/* Header */
+@media (max-width: 600px) {
+    ul {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    li {
+        display: block;
+        padding: 10px 0;
+    }
+
+    a {
+        padding: 10px;
+        font-size: 0.9em;
+    }
+}

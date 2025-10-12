@@ -131,3 +131,24 @@ button.disabled {
 button:hover:not(.disabled) {
     background-color: #218838; /* เปลี่ยนสีเมื่อชี้ */
 }
+
+/* Projects */
+@media (max-width: 600px) {
+    div[name="content-projects"] > div {
+        padding-left: 20px;
+    }
+
+    .year-indicator h2, .year-indicator h3 {
+        font-size: 1.2em;
+        padding: 10px 15px;
+    }
+
+    .project {
+        padding: 15px;
+    }
+
+    .project-btn-github, .project-btn {
+        padding: 8px 12px;
+        font-size: 0.85em;
+    }
+}
