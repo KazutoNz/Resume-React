@@ -1,0 +1,71 @@
+/*--------------------------------------------------------------
+                          HEADER STYLING
+--------------------------------------------------------------*/
+
+/* Header styling */
+h1 {
+    color: #c3c3c3; /* สีหัวข้อ */
+    align-items: center; /* จัดแนวกลาง */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+    margin-bottom: 15px; /* ระยะห่างด้านล่าง */
+}
+
+/*--------------------------------------------------------------
+                          NAVBAR ANIMATION
+--------------------------------------------------------------*/
+
+/* Navbar Menu Animation */
+body, html {
+    margin: 0; /* คืนค่าระยะห่าง */
+    font: bold 14px/1.4 'Open Sans', Arial, sans-serif; /* ตั้งค่าแบบอักษร */
+    background: #000; /* สีพื้นหลัง */
+}
+
+ul { 
+    margin: 10px auto 0; /* ระยะห่างจากด้านบน */
+    padding: 0; /* คืนค่าระยะห่าง */
+    list-style: none; /* ลบสัญลักษณ์ในรายการ */
+    display: table; /* ใช้ตารางในการจัดรูปแบบ */
+    width: 600px; /* ความกว้างของเมนู */
+    text-align: center; /* จัดกลาง */
+}
+
+li { 
+    display: table-cell; /* ใช้เซลล์ตาราง */
+    position: relative; /* ใช้ตำแหน่งสัมพัทธ์ */
+    padding: 15px 0; /* ระยะห่างภายใน */
+}
+
+a {
+    color: #fff; /* สีของลิงก์ */
+    text-transform: uppercase; /* ตัวพิมพ์ใหญ่ทั้งหมด */
+    text-decoration: none; /* ไม่มีขีดเส้นใต้ */
+    letter-spacing: 0.15em; /* ระยะห่างระหว่างตัวอักษร */
+    display: inline-block; /* จัดให้ลิงก์เป็นบล็อก */
+    padding: 15px 20px; /* เพิ่มพื้นที่ในการคลิก */
+    position: relative; /* ใช้ตำแหน่งสัมพัทธ์ */
+}
+
+a:after {    
+    content: ""; /* สร้างเนื้อหาเพื่อใช้ในการทำแอนิเมชัน */
+    bottom: 0; /* ตั้งตำแหน่งฐาน */
+    display: block; /* เปลี่ยนเป็นบล็อก */
+    height: 2px; /* ความสูงของเส้นขีดใต้ */
+    left: 50%; /* เริ่มจากกลาง */
+    position: absolute; /* ใช้ตำแหน่งสัมพัทธ์ */
+    background: #fff; /* สีของเส้นขีดใต้ */
+    transition: width 0.3s ease 0s, left 0.3s ease 0s; /* ทำให้การเปลี่ยนแปลงราบรื่น */
+    width: 0; /* เริ่มต้นที่ 0 */
+}
+
+a:hover:after { 
+    width: 100%; /* เส้นขีดขยายเมื่อโฮเวอร์ */
+    left: 0; /* เริ่มจากซ้ายสุด */
+}
+
+/* Responsive behavior for small screens */
+@media screen and (max-height: 300px) {
+    ul {
+        margin-top: 40px; /* เปลี่ยนระยะห่างเมื่อหน้าจอเล็ก */
+    }
+}

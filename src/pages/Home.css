@@ -1,0 +1,96 @@
+/*--------------------------------------------------------------
+                          MARK STYLING
+--------------------------------------------------------------*/
+
+/* Mark styling */
+mark {
+    background: rgba(255,255,255,0.15); /* พื้นหลังของ mark */
+    color: #00BFFF; /* สีของข้อความใน mark */
+    border: 1px solid #00BFFF44; /* กรอบ */
+    border-radius: 10px; /* ขอบกลม */
+    backdrop-filter: blur(2px); /* เบลอพื้นหลัง */
+    padding: 2px 10px; /* ระยะห่างภายใน */
+    font-weight: 500; /* น้ำหนักตัวอักษร */
+}
+
+/*--------------------------------------------------------------
+                       ABOUT ME CONTENT STYLING
+--------------------------------------------------------------*/
+
+/* About Me Content Styling */
+div[name="content-aboutme"] {
+    display: flex; /* ใช้ flexbox */
+    flex-direction: column; /* เรียงด้านล่าง */
+    align-items: center; /* จัดที่กลาง */
+    justify-content: center; /* จัดกลาง */
+    max-width: 900px; /* ความกว้างสูงสุด */
+    margin: 0 auto 30px auto; /* จัดกลางและมีระยะด้านล่าง */
+    padding: 30px 20px; /* ระยะห่างภายใน */
+    background: #1a1a1a; /* สีพื้นหลัง */
+    border-radius: 12px; /* ขอบกลม */
+    border: 1px solid #444; /* กรอบ */
+    box-shadow: 0 4px 8px rgba(0, 191, 255, 0.1); /* เงาสีฟ้า */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+
+/* Circular image styling */
+.circular-image {
+    width: 100%; /* ความกว้าง 100% */
+    height: auto; /* ความสูงอัตโนมัติ */
+    margin-bottom: 20px; /* ระยะห่างด้านล่าง */
+    max-width: 250px; /* ขนาดสูงสุด */
+    max-height: 80vh; /* ความสูงสูงสุด */
+    object-fit: cover; /* ครอบรูปให้เข้ากับขนาด */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* เงา */
+}
+
+/* About Me Title */
+div[name="content-aboutme"] h1 {
+    color: #00BFFF; /* สีหัวข้อ */
+    margin-bottom: 18px; /* ระยะห่างด้านล่าง */
+    font-size: 2.2em; /* ขนาดตัวอักษร */
+    text-shadow: 0 2px 4px rgba(0, 191, 255, 0.2); /* เงาข้อความ */
+}
+
+/* About Me Text */
+div[name="content-aboutme"] p {
+    font-size: 1.5em; /* ขนาดตัวอักษร */
+    color: #eee; /* สีข้อความ */
+    line-height: 1.7; /* ระยะห่างระหว่างบรรทัด */
+    margin-bottom: 0; /* ระยะห่างด้านล่าง */
+}
+
+/*--------------------------------------------------------------
+                       UNDERLINE ANIMATION STYLES
+--------------------------------------------------------------*/
+
+/* Animation ขีดเส้นใต้ */
+.hover-underline-animation {
+    display: inline-block; /* ให้แสดงเป็นบล็อก */
+    position: relative; /* ใช้ตำแหน่งสัมพัทธ์ */
+}
+
+.hover-underline-animation::after {
+    content: ''; /* เนื้อหาเป็นศูนย์ */
+    position: absolute; /* ใช้ตำแหน่งสัมพัทธ์ */
+    width: 100%; /* ความกว้างของเส้น */
+    transform: scaleX(0); /* เริ่มต้นที่ 0 */
+    height: 2px; /* ความสูงของเส้นขีด */
+    bottom: 0; /* อยู่ที่ฐานของข้อความ */
+    left: 0; /* เริ่มที่ซ้าย */
+    background-color: #0087ca; /* สีเส้นขีด */
+    transition: transform 0.25s ease-out; /* เอฟเฟกต์การเปลี่ยนแปลง */
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1); /* ขยายเส้นขีดเมื่อโฮเวอร์ */
+}
+
+.hover-underline-animation.center::after {
+    transform-origin: bottom center; /* จุดเริ่มต้น */
+}
+
+.hover-underline-animation.center:hover::after {
+    transform-origin: bottom center; /* จุดเริ่มต้นเมื่อโฮเวอร์ */
+}

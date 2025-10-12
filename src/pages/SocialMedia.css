@@ -1,0 +1,130 @@
+/*--------------------------------------------------------------
+                          SOCIAL MEDIA STYLING
+--------------------------------------------------------------*/
+
+/* Container สำหรับ Social Media */
+div[name="content-social"] {
+    display: grid; /* ใช้ Grid Layout */
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr)); /* จัดเรียงตามขนาด */
+    gap: 50px; /* ระยะห่างระหว่างบล็อก */
+    margin: 0 auto; 
+    max-width: 1000px; /* ความกว้างสูงสุด */
+}
+
+/* Styling สำหรับแต่ละบล็อก Social Media */
+.facebook {
+    display: grid;
+    grid-template-columns: 48px 1fr; /* ส่วนของไอคอนและข้อความ */
+    gap: 12px; /* ระยะห่างระหว่างไอคอนกับข้อความ */
+    align-items: center; /* จัดให้อยู่กลาง */
+    background: #1f1f23; /* สีพื้นหลัง */
+    border-radius: 12px; 
+    border-left: 6px solid #5694ea; /* ขอบทางซ้าย */
+    padding: 12px 14px; /* Padding */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); /* เงา */
+    transition: transform .18s ease, box-shadow .18s ease; /* เอฟเฟกต์การเปลี่ยนแปลง */
+    width: 100%;
+}
+
+.Github {
+    display: grid;
+    grid-template-columns: 48px 1fr; /* ส่วนของไอคอนและข้อความ */
+    gap: 12px; /* ระยะห่างระหว่างไอคอนกับข้อความ */
+    align-items: center; /* จัดให้อยู่กลาง */
+    background: #1f1f23; /* สีพื้นหลัง */
+    border-radius: 12px; 
+    border-left: 6px solid #353536; /* ขอบทางซ้าย */
+    padding: 12px 14px; /* Padding */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); /* เงา */
+    transition: transform .18s ease, box-shadow .18s ease; /* เอฟเฟกต์การเปลี่ยนแปลง */
+    width: 100%;
+}
+
+.Email {
+    display: grid;
+    grid-template-columns: 48px 1fr; /* ส่วนของไอคอนและข้อความ */
+    gap: 12px; /* ระยะห่างระหว่างไอคอนกับข้อความ */
+    align-items: center; /* จัดให้อยู่กลาง */
+    background: #1f1f23; /* สีพื้นหลัง */
+    border-radius: 12px; 
+    border-left: 6px solid #f55058; /* ขอบทางซ้าย */
+    padding: 12px 14px; /* Padding */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25); /* เงา */
+    transition: transform .18s ease, box-shadow .18s ease; /* เอฟเฟกต์การเปลี่ยนแปลง */
+    width: 100%;
+}
+
+/* เอฟเฟกต์เมื่อชี้ไปที่บล็อก */
+.facebook:hover, .Github:hover, .Email:hover {
+    transform: translateY(-5px); /* ให้ลอยขึ้นเล็กน้อย */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5); /* เอฟเฟกต์เงาเมื่อชี้ */
+}
+
+/* Styling สำหรับไอคอน */
+.icon-facebook, .icon-github, .icon-email {
+    width: 48px; /* ขนาดไอคอน */
+    height: auto; 
+}
+
+/* Styling สำหรับข้อความ */
+.facebook h1, .Github h1, .Email h1, .facebook p, .Github p, .Email p {
+    color: #eee; 
+    margin: 0;
+    text-align: left; /* จัดข้อความชิดซ้าย */
+}
+
+.contact-actions {
+    display: flex; 
+    align-items: center; /* จัดให้ปุ่มอยู่ในแนวเดียวกัน */
+    gap: 10px; /* ช่องว่างระหว่างปุ่ม */
+    margin-top: 6px; 
+}
+
+/* Styling สำหรับลิงก์และปุ่ม */
+.contact-actions {
+    display: flex; 
+    align-items: center; /* จัดให้ปุ่มอยู่ในแนวเดียวกัน */
+    gap: 10px; /* ช่องว่างระหว่างปุ่ม */
+    margin-top: 6px; 
+}
+
+/* Styling สำหรับลิงก์และปุ่ม */
+.contact-link, .contact-copy {
+    font-size: 0.9rem; /* ขนาดตัวอักษร */
+    background: #2a2a2f; /* สีพื้นหลัง */
+    color: #fff; /* สีข้อความ */
+    border: 1px solid #3A3A40; /* กรอบ */
+    border-radius: 8px; /* ขอบกลม */
+    padding: 6px 12px; /* ระยะห่างภายใน */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์ */
+    text-decoration: none; /* ไม่มีขีดเส้นใต้ */
+    transition: background 0.18s ease, border-color 0.18s ease; /* เอฟเฟกต์การเปลี่ยนสี */
+    min-width: auto; /* ความกว้างขั้นต่ำให้ปุ่ม */
+    white-space: nowrap; /* ป้องกันการตัดคำในปุ่ม */
+    flex: 1; /* ทำให้ลิงก์และปุ่มมีขนาดเท่ากัน */
+    margin: 0%;
+}
+
+/* เอฟเฟกต์เมื่อชี้ไปที่ลิงก์ */
+.contact-link:hover {
+    background: #4f6a8f; /* สีเข้มกว่าเมื่อชี้ */
+}
+
+/* Styling สำหรับปุ่มคัดลอก */
+.contact-actions button {
+    background-color: #3e3e3e; /* สีพื้นหลัง */
+    color: white; /* สีข้อความ */
+    border: none; /* ไม่มีกรอบ */
+    padding: 6px 10px; /* ระยะห่างภายใน */
+    border-radius: 5px; /* ขอบกลม */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์ */
+    min-width: 120px; /* ความกว้างขั้นต่ำให้ปุ่ม */
+    text-align: center; /* จัดกลางข้อความในปุ่ม */
+    font-size: 14px; /* ขนาดตัวอักษรในปุ่ม */
+    white-space: nowrap; /* ป้องกันการตัดคำในปุ่ม */
+}
+
+/* เอฟเฟกต์เมื่อชี้ไปที่ปุ่ม */
+.contact-actions button:hover {
+    background-color: #4f6a8f; /* สีเข้มกว่าเมื่อชี้ */
+}

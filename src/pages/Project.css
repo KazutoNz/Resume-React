@@ -1,0 +1,133 @@
+/*--------------------------------------------------------------
+                       PROJECT SECTION STYLES
+--------------------------------------------------------------*/
+
+/* Styling for the project title */
+.project h3 {
+    color: #a5ff28c5; /* เปลี่ยนสีหัวข้อเป็นทอง */
+    font-size: 1.5em; /* ขนาดตัวอักษร */
+    margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+}
+
+/* Styling for the project description */
+.project p {
+    color: #EAEAEA; /* เปลี่ยนสีข้อความเป็นเทาอ่อน */
+    font-size: 1.2em; /* ขนาดตัวอักษร */
+    line-height: 1.5; /* ระยะห่างระหว่างบรรทัด */
+    margin-bottom: 0; /* ไม่มีระยะห่างด้านล่าง */
+}
+
+/* Improved Project Div Styling */
+div[name="content-projects"] > div {
+    margin-top: 30px; /* ระยะห่างระหว่างปี */
+    position: relative; /* ทำให้ตำแหน่งสัมพัทธ์ */
+    padding-left: 40px; /* ระยะห่างซ้ายสำหรับจุด */
+}
+
+/* Header of the year */
+.year-indicator {
+    padding: 10px 0; /* ประมาณ */
+    font-weight: bold; /* น้ำหนักตัวอักษร */
+    margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+}
+
+/* ปรับ Text ของ  H2*/
+.year-indicator h2 {
+    font-size: 1.6em; /* ขนาดตัวอักษร */
+    color: #98a9a8; /* สีข้อความ */
+    margin-left: 20px; /* ระยะห่างจากจุด */
+    text-align: left; /* จัดข้อความชิดซ้าย */
+    
+    text-decoration: none; /* ไม่มีการขีดเส้นใต้ */
+    letter-spacing: 0.14em; /* ระยะห่างระหว่างตัวอักษร */
+    display: inline-block; /* แสดงเป็นบล็อกแนวนอน */
+    padding: 15px 20px; /* ระยะห่างภายใน */
+    position: relative; /* ใช้ตำแหน่งสัมพัทธ์ */
+}
+
+.year-indicator h3 {
+    font-size: 1.5em; /* ขนาดตัวอักษร */
+    color: #98a9a8; /* สีข้อความ */
+    
+    text-decoration: none; /* ไม่มีการขีดเส้นใต้ */
+    letter-spacing: 0.14em; /* ระยะห่างระหว่างตัวอักษร */
+    display: inline-block; /* แสดงเป็นบล็อกแนวนอน */
+    position: relative; /* ใช้ตำแหน่งสัมพัทธ์ */
+}
+
+.year-indicator p{
+    font-size: 1.3em; /* ขนาดตัวอักษร */
+    color: #EAEAEA; /* สีข้อความ */
+    margin-bottom: 0; /* ไม่มีระยะห่างด้านล่าง */
+}
+
+/* ลักษณะของจุด */
+.dot {
+    position: absolute; /* ใช้ตำแหน่งสัมพัทธ์ */
+    left: 0; /* ตั้งจุดให้ชิดซ้าย */
+    top: 30px; /* ระยะห่างจากด้านบน */
+    width: 20px; /* ขนาดจุด */
+    height: 20px; /* ขนาดจุด */
+    background: #f7f7f8; /* สีพื้นหลังของจุด */
+    border-radius: 50%; /* ทำให้เป็นวงกลม */
+}
+
+/* Project Style */
+.project {
+    margin-top: 15px; /* ระยะห่างระหว่างโปรเจ็กต์ */
+    background: #0e0e0e; /* สีพื้นหลังของโปรเจ็กต์ */
+    padding: 20px; /* ระยะห่างภายใน */
+    margin: inherit; /* มรดก */
+    border-radius: 5px; /* ขอบกลม */
+    transition: background 0.3s; /* เอฟเฟกต์การเปลี่ยนแปลง */
+}
+
+/* เอฟเฟกต์เมื่อโฮเวอร์ */
+.project:hover {
+    background: #3c3c3c; /* เปลี่ยนสีเมื่อเอาเมาส์ไปวาง */
+}
+
+/* Project Button Style */
+.project-btn-github {
+    background-color: #000000; /* สีของปุ่ม */
+    color: white; /* สีข้อความปุ่ม */
+    border: none; /* ไม่มีกรอบ */
+    padding: 10px 15px; /* ระยะห่างภายใน */
+    border-radius: 5px; /* ขอบกลม */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์เป็นมือ */
+    margin-right: 10px; /* ระยะห่างระหว่างปุ่ม */
+    transition: background-color 0.3s; /* การเปลี่ยนสีปุ่ม */
+}
+
+/* เปลี่ยนสีปุ่มเมื่อโฮเวอร์ */
+.project-btn:hover {
+    background-color: #3392c17e; /* เปลี่ยนสีปุ่มเมื่อชี้ */
+}
+
+/*--------------------------------------------------------------
+                          BUTTON STYLES
+--------------------------------------------------------------*/
+
+/* General Button Styling */
+button {
+    background-color: #28a745; /* สีพื้นหลัง */
+    color: white; /* สีข้อความ */
+    border: none; /* ไม่มีกรอบ */
+    padding: 10px 15px; /* ระยะห่างภายใน */
+    border-radius: 5px; /* ขอบกลม */
+    cursor: pointer; /* เปลี่ยนเคอร์เซอร์ */
+    margin-top: 10px; /* ระยะห่างด้านบน */
+    transition: background-color 0.3s; /* ทำให้การเปลี่ยนสีราบรื่น */
+}
+
+/* Disabled Button Style */
+button.disabled {
+    background-color: #6c757d; /* สีที่ไม่สามารถใช้งานได้ */
+    margin-right: 10px; /* ระยะห่างระหว่างปุ่ม */
+    cursor: not-allowed; /* เปลี่ยนเคอร์เซอร์ */
+}
+
+/* Change color on hover */
+button:hover:not(.disabled) {
+    background-color: #218838; /* เปลี่ยนสีเมื่อชี้ */
+}

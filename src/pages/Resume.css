@@ -1,0 +1,60 @@
+/*--------------------------------------------------------------
+                      RESUME CONTENT STYLES
+--------------------------------------------------------------*/
+
+/* Resume Content Styling */
+div[name="content-resume"] {
+    display: flex; /* ใช้ flexbox */
+    flex-direction: column; /* เรียงด้านล่าง */
+    align-items: center; /* จัดที่กลาง */
+    justify-content: center; /* จัดกลาง */
+    max-width: 1200px; /* ความกว้างสูงสุด */
+    margin: 0 auto; /* จัดให้อยู่ตรงกลาง */
+    padding: 30px 20px; /* ระยะห่างภายใน */
+    background: #1a1a1a; /* สีพื้นหลัง */
+    border-radius: 12px; /* ขอบกลม */
+    border: 1px solid #444; /* กรอบ */
+    box-shadow: 0 4px 8px rgba(0, 191, 255, 0.1); /* เงาสีฟ้า */
+    text-align: center; /* จัดข้อความให้อยู่กลาง */
+}
+
+/* Resume Title Styling */
+div[name="content-resume"] h1 {
+    color: #00BFFF; /* สีหัวข้อ */
+    margin-bottom: 25px; /* ระยะห่างด้านล่าง */
+    font-size: 2.5em; /* ขนาดตัวอักษร */
+    text-shadow: 0 2px 4px rgba(0, 191, 255, 0.3); /* เงาข้อความ */
+}
+
+/* Resume Image Styling */
+div[name="content-resume"] img {
+    width: 100%; /* ความกว้าง 100% */
+    height: auto; /* ความสูงอัตโนมัติ */
+    max-width: 800px !important; /* กำหนดขนาดสูงสุด */
+    max-height: 70vh !important; /* ความสูงไม่เกิน 70vh */
+    object-fit: contain; /* ให้รูปภาพจัดเต็ม */
+    border-radius: 8px; /* ขอบกลม */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); /* เงา */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* เอฟเฟกต์เมื่อ hover */
+}
+
+/* เอฟเฟกต์เมื่อวางเมาส์บนรูปภาพ */
+div[name="content-resume"] img:hover {
+    transform: scale(1.02); /* ขยายเล็กน้อย */
+    box-shadow: 0 8px 16px rgba(0, 191, 255, 0.2); /* เงาสีฟ้า */
+}
+
+/*--------------------------------------------------------------
+                          RESPONSIVE DESIGN
+--------------------------------------------------------------*/
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px; /* ระยะห่างขอบ */
+    }
+    a {
+        display: block; /* ลิงก์เป็นบล็อก */
+        margin-bottom: 10px; /* ระยะห่างด้านล่าง */
+    }
+}
