@@ -33,6 +33,17 @@ div[name="content-aboutme"] {
     text-align: center; /* จัดข้อความให้อยู่กลาง */
 }
 
+.fade-section {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 /* Circular image styling */
 .circular-image {
     width: 100%; /* ความกว้าง 100% */

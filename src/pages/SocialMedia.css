@@ -129,6 +129,10 @@ div[name="content-social"] {
     background-color: #4f6a8f; /* สีเข้มกว่าเมื่อชี้ */
 }
 
+a.contact-link {
+    text-align: center; /* จัดกลางข้อความในลิงก์ */
+}
+
 /* Social Media */
 @media (max-width: 600px) {
     div[name="content-social"] {

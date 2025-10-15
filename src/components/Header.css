@@ -44,6 +44,12 @@ a {
     display: inline-block; /* จัดให้ลิงก์เป็นบล็อก */
     padding: 15px 20px; /* เพิ่มพื้นที่ในการคลิก */
     position: relative; /* ใช้ตำแหน่งสัมพัทธ์ */
+    font-weight: 500;
+    text-decoration: inherit;
+}
+
+a:hover {
+  color: #ffffff;
 }
 
 a:after {    
