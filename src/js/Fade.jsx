@@ -26,7 +26,9 @@ export default function Fade({ children }) {
   return (
     <div
       ref={ref}
-      className={`fade-section ${isVisible ? "show" : ""}`}
+      className={`transform transition-all duration-700 ease-out ${
+        isVisible ? "translate-y-0 opacity-100" : "translate-y-10 opacity-0"
+      }`}
     >
       {children}
     </div>
