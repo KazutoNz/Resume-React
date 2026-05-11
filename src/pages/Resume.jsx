@@ -8,7 +8,7 @@ function Resume() {
        <Header />
       <div name="content-resume">
         <h1>My Resume</h1>
-        <img src="./RESUME.png" alt="Resume" className="content-resume" />
+        <img src="./Chadayu Koetsantas_Resume.png" alt="Resume" className="content-resume" />
       </div>
         <Footer />
     </div>
