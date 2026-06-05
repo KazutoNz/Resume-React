@@ -14,6 +14,7 @@ import {
   SiGit,
   SiGithub,
   SiPostman,
+  SiTailwindcss,
 } from 'react-icons/si';
 import { FaMagic, FaMousePointer, FaRegGem, FaRobot } from 'react-icons/fa';
 import { SkeletonBlock } from '../components/Skeleton';
@@ -35,6 +36,7 @@ function TechnicalSkills() {
         { name: 'JavaScript', icon: SiJavascript, color: 'text-yellow-300' },
         { name: 'HTML5', icon: SiHtml5, color: 'text-orange-400' },
         { name: 'CSS3', icon: SiCss, color: 'text-sky-400' },
+        { name: 'Tailwind', icon: SiTailwindcss, color: 'text-sky-400' },
       ],
     },
     {
