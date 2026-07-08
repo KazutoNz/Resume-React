@@ -61,7 +61,7 @@ function Home() {
                     >
                       <p className="text-sm uppercase tracking-wider text-sky-300">Focus</p>
                       <p className="mt-2 text-zinc-200">
-                        Frontend and Backend development with React, PHP, and modern web tooling.
+                        Frontend and Backend development with React, PHP, and more modern web tooling.
                       </p>
                     </article>
                     <article

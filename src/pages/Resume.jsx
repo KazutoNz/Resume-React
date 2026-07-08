@@ -57,7 +57,7 @@ function Resume() {
                 className="w-full rounded-md"
               >
                 <img
-                  src="./Chadayu Koetsantas_Resume-1.png"
+                  src="./Chadayu Koetsantas_Resume (1).png"
                   alt="Resume"
                   data-interactive="true"
                   className="mx-auto h-auto max-h-[68vh] w-full rounded-md object-contain shadow-md shadow-black/50 sm:max-h-[78vh]"
