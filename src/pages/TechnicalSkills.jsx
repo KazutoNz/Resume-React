@@ -15,8 +15,11 @@ import {
   SiGithub,
   SiPostman,
   SiTailwindcss,
+  SiPython,
+  SiNodedotjs,
+  SiBun
 } from 'react-icons/si';
-import { FaMagic, FaMousePointer, FaRegGem, FaRobot } from 'react-icons/fa';
+import { FaMagic, FaMousePointer, FaRegGem, FaRobot, FaNetworkWired } from 'react-icons/fa';
 import { SkeletonBlock } from '../components/Skeleton';
 
 function TechnicalSkills() {
@@ -42,8 +45,11 @@ function TechnicalSkills() {
     {
       title: 'Backend & Database',
       items: [
+        { name: 'Node.js', icon: SiNodedotjs, color: 'text-green-500' },
         { name: 'Go (Golang)', icon: SiGo, color: 'text-cyan-300' },
+        { name: 'Python', icon: SiPython, color: 'text-yellow-400' },
         { name: 'PHP', icon: SiPhp, color: 'text-indigo-300' },
+        { name: 'REST API', icon: FaNetworkWired, color: 'text-slate-300' },
         { name: 'MySQL', icon: SiMysql, color: 'text-blue-300' },
         { name: 'Supabase', icon: SiSupabase, color: 'text-emerald-400' },
       ],
@@ -54,6 +60,7 @@ function TechnicalSkills() {
         { name: 'Git', icon: SiGit, color: 'text-orange-400' },
         { name: 'GitHub', icon: SiGithub, color: 'text-zinc-100' },
         { name: 'Postman', icon: SiPostman, color: 'text-orange-300' },
+        { name: 'Bun', icon: SiBun, color: 'text-pink-100' },
         { name: 'Cursor', icon: FaMousePointer, color: 'text-sky-300' },
         { name: 'Lovable', icon: FaMagic, color: 'text-pink-300' },
         { name: 'Claude', icon: FaRobot, color: 'text-violet-300' },
