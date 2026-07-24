@@ -33,7 +33,7 @@ function Header() {
 
           <h1 className="text-center text-2xl font-semibold text-zinc-100 sm:text-3xl">
             <Link to="/" className="transition-colors hover:text-sky-400">
-              Kazuto
+              About Me
             </Link>
           </h1>
 
