@@ -96,7 +96,7 @@ function Home() {
                       className="mx-auto h-36 w-36 rounded-full border border-zinc-700 object-cover transition group-hover:border-sky-500/50 sm:h-40 sm:w-40"
                     />
                     <p className="mt-3 flex items-center justify-center gap-1 text-center text-sm text-zinc-400">
-                      <IconPin /> Phetchaburi, Thailand
+                      <IconPin /> Bangkok, Thailand
                     </p>
                   </div>
 
