@@ -19,7 +19,7 @@ import {
   SiNodedotjs,
   SiBun
 } from 'react-icons/si';
-import { FaMagic, FaMousePointer, FaRegGem, FaRobot, FaNetworkWired } from 'react-icons/fa';
+import { FaMagic, FaMousePointer, FaRegGem, FaRobot, FaNetworkWired, FaDatabase } from 'react-icons/fa';
 import { SkeletonBlock } from '../components/Skeleton';
 
 function TechnicalSkills() {
@@ -43,13 +43,19 @@ function TechnicalSkills() {
       ],
     },
     {
-      title: 'Backend & Database',
+      title: 'Backend',
       items: [
         { name: 'Node.js', icon: SiNodedotjs, color: 'text-green-500' },
         { name: 'Go (Golang)', icon: SiGo, color: 'text-cyan-300' },
         { name: 'Python', icon: SiPython, color: 'text-yellow-400' },
         { name: 'PHP', icon: SiPhp, color: 'text-indigo-300' },
         { name: 'REST API', icon: FaNetworkWired, color: 'text-slate-300' },
+      ],
+    },
+    {
+      title: 'Database',
+      items: [
+        { name: 'SQL', icon: FaDatabase, color: 'text-zinc-300' },
         { name: 'MySQL', icon: SiMysql, color: 'text-blue-300' },
         { name: 'Supabase', icon: SiSupabase, color: 'text-emerald-400' },
       ],
@@ -78,7 +84,7 @@ function TechnicalSkills() {
           <div className="mt-6 space-y-6">
             {loading ? (
               <>
-                {[1, 2, 3].map((group) => (
+                {[1, 2, 3, 4].map((group) => (
                   <div key={group}>
                     <SkeletonBlock className="mb-3 h-6 w-52" />
                     <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
